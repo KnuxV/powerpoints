@@ -1,0 +1,13 @@
+.small-text {
+    font-size: 80%;
+}
+
+/* Cible les listes ordonnées de premier niveau dans les éléments avec la classe .small-text */
+.small-text ol {
+    list-style-type: upper-roman; /* Utiliser les chiffres romains */
+}
+
+/* Cible les listes ordonnées imbriquées (de deuxième niveau) dans les éléments avec la classe .small-text */
+.small-text ol ol {
+    list-style-type: decimal; /* Utiliser les numéros décimaux pour les listes de deuxième niveau */
+}
