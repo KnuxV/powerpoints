@@ -1,26 +1,77 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register your group for the project</title>
+    <style>
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+
+        .btn-block {
+            width: 100%;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-block:hover {
+            background-color: #23272b;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
   <h1>Project Submission Form</h1>
-  <form target="_blank" action="https://formsubmit.co/06d686385f4a353f7ad767e0f4b98b8f" method="POST">
+  <form action="https://formspree.io/f/mjkbzegp" method="POST">
 
     <!-- Student 1 -->
     <div class="form-group">
       <h3>Student 1</h3>
       <div class="form-row">
         <div class="col">
-          <input type="text" name="first_name_1" class="form-control" placeholder="First Name" required>
+          <label for="first_name_1">First Name:</label>
+          <input type="text" id="first_name_1" name="first_name_1" class="form-control" required>
         </div>
         <div class="col">
-          <input type="text" name="last_name_1" class="form-control" placeholder="Last Name" required>
+          <label for="last_name_1">Last Name:</label>
+          <input type="text" id="last_name_1" name="last_name_1" class="form-control" required>
         </div>
         <div class="col">
-          <input type="email" name="email_1" class="form-control" placeholder="Email Address" required>
+          <label for="email_1">Email Address:</label>
+          <input type="email" id="email_1" name="email_1" class="form-control" required>
         </div>
       </div>
     </div>
@@ -30,13 +81,16 @@
       <h3>Student 2</h3>
       <div class="form-row">
         <div class="col">
-          <input type="text" name="first_name_2" class="form-control" placeholder="First Name" required>
+          <label for="first_name_2">First Name:</label>
+          <input type="text" id="first_name_2" name="first_name_2" class="form-control" required>
         </div>
         <div class="col">
-          <input type="text" name="last_name_2" class="form-control" placeholder="Last Name required">
+          <label for="last_name_2">Last Name:</label>
+          <input type="text" id="last_name_2" name="last_name_2" class="form-control" required>
         </div>
         <div class="col">
-          <input type="email" name="email_2" class="form-control" placeholder="Email Address" required>
+          <label for="email_2">Email Address:</label>
+          <input type="email" id="email_2" name="email_2" class="form-control" required>
         </div>
       </div>
     </div>
@@ -46,13 +100,16 @@
       <h3>Student 3</h3>
       <div class="form-row">
         <div class="col">
-          <input type="text" name="first_name_3" class="form-control" placeholder="First Name">
+          <label for="first_name_3">First Name:</label>
+          <input type="text" id="first_name_3" name="first_name_3" class="form-control">
         </div>
         <div class="col">
-          <input type="text" name="last_name_3" class="form-control" placeholder="Last Name">
+          <label for="last_name_3">Last Name:</label>
+          <input type="text" id="last_name_3" name="last_name_3" class="form-control">
         </div>
         <div class="col">
-          <input type="email" name="email_3" class="form-control" placeholder="Email Address">
+          <label for="email_3">Email Address:</label>
+          <input type="email" id="email_3" name="email_3" class="form-control">
         </div>
       </div>
     </div>
@@ -60,20 +117,20 @@
     <!-- Project Title -->
     <div class="form-group">
       <h3>Title of the Project</h3>
-      <input type="text" name="project_title" class="form-control" placeholder="Project Title" required>
+      <label for="project_title">Project Title:</label>
+      <input type="text" id="project_title" name="project_title" class="form-control" required>
     </div>
 
     <!-- Project Description -->
     <div class="form-group">
       <h3>Description of the Project</h3>
-      <textarea name="project_description" class="form-control" placeholder="Describe your project" rows="10" required></textarea>
+      <label for="project_description">Project Description:</label>
+      <textarea id="project_description" name="project_description" class="form-control" rows="10" required></textarea>
     </div>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+    <button type="submit" class="btn-block">Submit Form</button>
   </form>
 </div>
 </body>
 </html>
-
-
